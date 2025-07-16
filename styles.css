@@ -1,0 +1,43 @@
+v   /* Simple Stylish Navbar */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f8fb;
+        }
+        .navbar {
+            background: #0077b6;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            margin-right: 32px;
+        }
+        .navbar nav {
+            flex: 1;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin-right: 24px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #90e0ef;
+        }
