@@ -1,0 +1,119 @@
+.settings-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 40px 40px 40px;
+}
+.settings-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a237e;
+    letter-spacing: 1px;
+}
+.settings-form section {
+    margin-bottom: 28px;
+}
+.settings-form h3 {
+    font-size: 1.2rem;
+    color: #3949ab;
+    margin-bottom: 12px;
+}
+.settings-form label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    outline: none;
+    transition: border 0.2s;
+}
+.settings-form input:focus {
+    border-color: #3949ab;
+}
+.toggle-password {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    color: #3949ab;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 0 6px;
+    transition: color 0.2s;
+}
+.toggle-password:hover {
+    color: #1a237e;
+}
+.theme-toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.theme-toggle-label input[type="checkbox"] {
+    display: none;
+}
+.toggle-slider {
+    width: 40px;
+    height: 22px;
+    background: #bdbdbd;
+    border-radius: 12px;
+    position: relative;
+    transition: background 0.2s;
+}
+.theme-toggle-label input[type="checkbox"]:checked + .toggle-slider {
+    background: #3949ab;
+}
+.toggle-slider::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+.theme-toggle-label input[type="checkbox"]:checked + .toggle-slider::before {
+    transform: translateX(18px);
+}
+.save-btn {
+    background: #3949ab;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+.save-btn:hover {
+    background: #1a237e;
+}
+.save-message {
+    margin-top: 16px;
+    color: #388e3c;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .settings-container {
+        padding: 18px 8px 24px 8px;
+    }
+} 

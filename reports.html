@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports - Water Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">WMS Rwanda</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="water-usage.html">Water Usage</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="reports-container">
+            <div class="reports-title">Reports</div>
+            <div class="reports-filters">
+                <input type="date" class="filter-date" placeholder="From">
+                <input type="date" class="filter-date" placeholder="To">
+                <select class="filter-meter">
+                    <option value="">All Meters</option>
+                    <option value="Meter 1">Meter 1</option>
+                    <option value="Meter 2">Meter 2</option>
+                </select>
+                <button class="filter-btn">Filter</button>
+                <button class="export-btn">Export CSV</button>
+            </div>
+            <table class="reports-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Meter</th>
+                        <th>Usage (m³)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-06-01</td>
+                        <td>Meter 1</td>
+                        <td>120</td>
+                        <td><span class="status normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td>2024-06-01</td>
+                        <td>Meter 2</td>
+                        <td>98</td>
+                        <td><span class="status alert">Alert</span></td>
+                    </tr>
+                    <tr>
+                        <td>2024-06-02</td>
+                        <td>Meter 1</td>
+                        <td>110</td>
+                        <td><span class="status normal">Normal</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="reports.js"></script>
+</body>
+</html>

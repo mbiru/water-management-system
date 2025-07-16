@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings - Water Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">WMS Rwanda</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="water-usage.html">Water Usage</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="settings-container">
+            <div class="settings-title">Settings</div>
+            <form class="settings-form">
+                <section>
+                    <h3>Profile</h3>
+                    <label>Name
+                        <input type="text" id="profile-name" placeholder="Names">
+                    </label>
+                    <label>Email
+                        <input type="email" id="profile-email" placeholder="someone@email.com">
+                    </label>
+                </section>
+                <section>
+                    <h3>Password</h3>
+                    <label>New Password
+                        <input type="password" id="profile-password" placeholder="New Password">
+                        <button type="button" class="toggle-password">Show</button>
+                    </label>
+                </section>
+                <section>
+                    <h3>Preferences</h3>
+                    <label class="theme-toggle-label">
+                        <span>Dark Mode</span>
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="notifications-toggle">
+                        Enable Notifications
+                    </label>
+                </section>
+                <button type="submit" class="save-btn">Save Settings</button>
+                <div class="save-message" style="display:none;">Settings saved!</div>
+            </form>
+        </div>
+    </main>
+    <script src="settings.js"></script>
+</body>
+</html>

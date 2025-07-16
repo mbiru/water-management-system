@@ -1,0 +1,84 @@
+.reports-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 40px 40px 40px;
+}
+.reports-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a237e;
+    letter-spacing: 1px;
+}
+.reports-filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+    align-items: center;
+}
+.reports-filters input,
+.reports-filters select {
+    padding: 8px 14px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+.reports-filters input:focus,
+.reports-filters select:focus {
+    border-color: #3949ab;
+}
+.filter-btn, .export-btn {
+    background: #3949ab;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.filter-btn:hover, .export-btn:hover {
+    background: #1a237e;
+}
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafbfc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.reports-table th, .reports-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+.reports-table thead {
+    background: #e8eaf6;
+}
+.reports-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.2s;
+}
+.reports-table tbody tr:hover {
+    background: #f1f5fb;
+}
+.status {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.status.normal {
+    background: #e3fcec;
+    color: #388e3c;
+}
+.status.alert {
+    background: #ffebee;
+    color: #d32f2f;
+}

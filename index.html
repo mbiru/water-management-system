@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-     
     </style>
 </head>
 <body>
@@ -15,12 +14,66 @@
         <nav>
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Water Usage</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="water-usage.html">Water Usage</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Your page content goes here -->
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-title">Dashboard Overview</div>
+            <div class="dashboard-cards enhanced">
+                <div class="dashboard-card card-gradient">
+                    <div class="card-icon">💧</div>
+                    <h3>Total Water Used</h3>
+                    <div class="value">1,250 m³</div>
+                    <div class="card-desc">This month</div>
+                </div>
+                <div class="dashboard-card card-gradient">
+                    <div class="card-icon">⚒️</div>
+                    <h3>Active Meters</h3>
+                    <div class="value">32</div>
+                    <div class="card-desc">Currently online</div>
+                </div>
+                <div class="dashboard-card card-gradient">
+                    <div class="card-icon">☢️</div>
+                    <h3>Alerts</h3>
+                    <div class="value">2</div>
+                    <div class="card-desc">Needs attention</div>
+                </div>
+                <div class="dashboard-card card-gradient">
+                    <div class="card-icon">💰</div>
+                    <h3>Monthly Savings</h3>
+                    <div class="value">150,000 Rwf</div>
+                    <div class="card-desc">Compared to last month</div>
+                </div>
+            </div>
+            <div class="dashboard-sections">
+                <section class="dashboard-section trends-section">
+                    <div class="section-title">Usage Trends</div>
+                    <div class="chart-placeholder">[Usage Trends Chart Placeholder]</div>
+                </section>
+                <section class="dashboard-section activity-section">
+                    <div class="section-title">Recent Activity</div>
+                    <ul class="activity-list">
+                        <li><span class="activity-time">09:15</span> Meter 2 reported high usage <span class="activity-alert">(Alert)</span></li>
+                        <li><span class="activity-time">08:50</span> Meter 1 normal reading</li>
+                        <li><span class="activity-time">08:30</span> New meter added: Meter 3</li>
+                        <li><span class="activity-time">Yesterday</span> Monthly report generated</li>
+                    </ul>
+                </section>
+                <section class="dashboard-section quick-actions-section">
+                    <div class="section-title">Quick Actions</div>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn">Add Meter</button>
+                        <button class="quick-action-btn">Generate Report</button>
+                        <button class="quick-action-btn">View Alerts</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
